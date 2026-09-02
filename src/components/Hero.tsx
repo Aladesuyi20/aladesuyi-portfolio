@@ -1,4 +1,5 @@
 import { profile, stats } from "../data/profile";
+import ResumeMenu from "./ResumeMenu";
 
 export default function Hero() {
   return (
@@ -29,13 +30,7 @@ export default function Hero() {
           >
             View Portfolio
           </a>
-          <a
-            href={profile.resumeFile}
-            download
-            className="rounded-full glass px-6 py-3 text-sm hover:bg-white/10 transition-colors"
-          >
-            Download Resume
-          </a>
+        <ResumeMenu />
           <a
             href="#contact"
             className="rounded-full glass px-6 py-3 text-sm hover:bg-white/10 transition-colors"

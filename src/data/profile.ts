@@ -14,7 +14,7 @@ export const profile = {
   bioLead: "I love the moment raw numbers turn into a story leaders can act on.",
   bio: "I'm a Computer Engineering graduate obsessed with solving real business problems using data. My work spans analytics, business intelligence, sports analytics, and building modern web applications that ship. I care about clarity, speed, and decisions — not just charts.",
   bioTags: ["Analytics", "BI", "Sports", "Web"],
-  resumeFile: "/ALADESUYI_PRAISE_CV.pdf",
+  resumes: { dataAnalyst: { label: "Data Analyst CV", pdf: "/resumes/ALADESUYI_PRAISE_DATA_ANALYST_CV.pdf", docx: "/resumes/ALADESUYI_PRAISE_DATA_ANALYST_CV.docx", }, webDeveloper: { label: "Web Developer CV", pdf: "/resumes/ALADESUYI_PRAISE_FRONT_END_DEV_CV.pdf", docx: "/resumes/ALADESUYI_PRAISE_FRONT_END_DEV_CV.docx", }, },
 };
 
 export const stats = [
