@@ -40,7 +40,7 @@ export const projects: Project[] = [
     title: "Pulse Gym Website",
     description:
       "Modern fitness website with membership features, class schedules, and responsive design.",
-    tags: ["React", "HTML", "CSS", "JavaScript"],
+    tags: ["React", "HTML", "JavaScript", "TailwindCSS","TypeScript"],
     live: "https://www.pulsegym.online/#home",
     repo: "https://github.com/Aladesuyi20/pulsegym-fitness-app",
   },
