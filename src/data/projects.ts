@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description:
       "Modern fitness website with membership features, class schedules, and responsive design.",
     tags: ["React", "HTML", "CSS", "JavaScript"],
-    live: "https://inspiring-cassata-a2df7f.netlify.app/",
+    live: "https://www.pulsegym.online/#home",
     repo: "https://github.com/Aladesuyi20/pulsegym-fitness-app",
   },
 ];
