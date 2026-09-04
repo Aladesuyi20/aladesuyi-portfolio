@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { profile } from "../data/profile";
 
+// Using "/#section" (not just "#section") so these links work correctly
+// from any page, including case study pages — react-router navigates home
+// first, then main.tsx's ScrollManager scrolls to the right section.
 const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#skills", label: "Skills" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#services", label: "Services" },
+  { href: "/#work", label: "Work" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Nav() {
@@ -27,27 +31,27 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-display font-semibold">
+        <Link to="/" className="flex items-center gap-2 font-display font-semibold">
           <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-accent to-accent2 text-sm text-ink">
             {profile.initial}
           </span>
           {profile.shortName}
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-7 text-sm text-muted">
           {LINKS.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-white transition-colors">
+            <Link key={l.href} to={l.href} className="hover:text-white transition-colors">
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <a
-          href="#contact"
+        <Link
+          to="/#contact"
           className="hidden md:inline-flex items-center rounded-full bg-white text-ink text-sm font-medium px-4 py-2 hover:bg-white/90 transition-colors"
         >
           Hire me
-        </a>
+        </Link>
 
         <button
           className="md:hidden text-white"
@@ -67,13 +71,13 @@ export default function Nav() {
       {open && (
         <div className="md:hidden bg-ink border-t border-line px-4 py-4 flex flex-col gap-4 text-sm text-muted">
           {LINKS.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="hover:text-white">
+            <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="hover:text-white">
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a href="#contact" onClick={() => setOpen(false)} className="text-white font-medium">
+          <Link to="/#contact" onClick={() => setOpen(false)} className="text-white font-medium">
             Hire me
-          </a>
+          </Link>
         </div>
       )}
     </header>

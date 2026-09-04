@@ -25,12 +25,12 @@ export default function Hero() {
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="#projects"
+            href="#work"
             className="rounded-full bg-gradient-to-r from-accent to-accent2 text-ink font-medium px-6 py-3 text-sm hover:opacity-90 transition-opacity"
           >
             View Portfolio
           </a>
-        <ResumeMenu />
+          <ResumeMenu />
           <a
             href="#contact"
             className="rounded-full glass px-6 py-3 text-sm hover:bg-white/10 transition-colors"

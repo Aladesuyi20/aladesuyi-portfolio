@@ -44,16 +44,16 @@ export default function ResumeMenu() {
             <div key={r.label} className="border-b border-line last:border-0">
               <div className="px-4 pt-3 pb-1 text-xs text-muted">{r.label}</div>
               <div className="flex">
-                
-                 <a href={r.pdf}
+                <a
+                  href={r.pdf}
                   download
                   className="flex-1 px-4 py-2.5 text-sm hover:bg-white/5 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   PDF
                 </a>
-                
-                  <a href={r.docx}
+                <a
+                  href={r.docx}
                   download
                   className="flex-1 px-4 py-2.5 text-sm hover:bg-white/5 transition-colors border-l border-line"
                   onClick={() => setOpen(false)}

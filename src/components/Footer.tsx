@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import { profile, socials } from "../data/profile";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const links = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#skills", label: "Skills" },
-    { href: "#services", label: "Services" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/#experience", label: "Experience" },
+    { href: "/#skills", label: "Skills" },
+    { href: "/#services", label: "Services" },
+    { href: "/#work", label: "Work" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -23,9 +24,9 @@ export default function Footer() {
 
         <div className="flex flex-wrap justify-center gap-5 text-sm text-muted">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-white">
+            <Link key={l.href} to={l.href} className="hover:text-white">
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 
