@@ -1,40 +1,22 @@
-# Aladesuyi Praise Kolade — Portfolio
+# Personal Portfolio
 
-Personal portfolio site, built with React, TypeScript, Tailwind CSS, and Vite.
+This is my personal developer portfolio, designed and developed by me from scratch to showcase my skills, projects, experience, and journey in technology.
 
-Live: (add your deployed URL here once live)
+The portfolio brings together my work in **Frontend Development and Data Analytics**, highlighting the projects I’ve built and the technologies I’ve worked with.
 
-## Making edits
+### 🛠️ Built With
+- HTML
+- CSS
+- JavaScript
+- React
 
-All the actual content lives in `src/data/` as plain, readable files — you
-never need to touch the design/layout code to update text, add a project, or
-change a link.
+### 👨🏾‍💻 Author
 
-| To change...                          | Edit this file                |
-|----------------------------------------|--------------------------------|
-| Name, bio, tagline, stats, resume link | `src/data/profile.ts`         |
-| Contact info & social links            | `src/data/profile.ts`         |
-| Work experience                        | `src/data/experience.ts`      |
-| Skills & percentages                   | `src/data/skills.ts`          |
-| Services offered                       | `src/data/services.ts`        |
-| Projects (add one, add a live/GitHub link) | `src/data/projects.ts`    |
-| Testimonials                           | `src/data/testimonials.ts`    |
+**Aladesuyi Praise Kolade**
 
-For projects specifically: each entry has a `live` and `repo` field. Leave
-either as `""` (empty) if you don't have that link yet — the button for it
-just won't show up on the card. Fill it in later and it appears automatically.
+Frontend Developer | Data Analyst
 
-## Running locally
+- Portfolio: praisealadesuyi.online
+- GitHub: Aladesuyi20
 
-```bash
-npm install
-npm run dev        # local dev server with hot reload
-npm run build       # production build, output in dist/
-npm run preview     # preview the production build locally
-```
-
-## Deploying
-
-Push to GitHub, then import the repo into Netlify or Vercel. Both auto-detect
-Vite projects — no special config needed. Build command: `npm run build`,
-output directory: `dist`.
+> This portfolio was designed and developed from scratch by me as a personal project and is continuously being improved as I grow my skills and build new projects.
